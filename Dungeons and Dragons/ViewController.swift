@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         diceLabel.text = ""
     }
     
-    @IBAction func fourButtonPressed(_ sender: UIButton) {
+    @IBAction func diceButtonPressed(_ sender: UIButton) {
         let diceRoll = Int.random(in: 1...sender.tag)
         diceLabel.text = "You rolled a \(sender.tag)-sided dice and got a \(diceRoll)!"
     }
